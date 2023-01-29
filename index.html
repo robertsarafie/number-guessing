@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>Don`t Hurt Steve</title>
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>Don`t Hurt Steve</h1>
+
+    <div class="game">
+      <p>Guess a number between 1 - 100</p>
+
+      <input
+        type="text"
+        name="userInput"
+        id="userInput"
+      >
+
+      <p
+        id="result"
+        class="result"
+      ></p>
+
+      <div
+        class="wrapper"
+        id="wrapper"
+      >
+        <button
+          class="submit"
+          id="btn"
+          type="submit"
+        >Submit
+        </button>
+
+        <div class="button-shadow"></div>
+      </div>
+
+
+      <button
+        class="restart"
+        id="restart"
+        type="submit"
+      >Restart Game
+      </button>
+    </div>
+
+    <div class="steve">
+      <video
+        id="blink"
+        src="./videos/blink.webm"
+        autoplay
+        loop
+        muted
+        width="300"
+        height="300"
+      ></video>
+
+      <video
+        id="hurt"
+        class="false"
+        src="./videos/hurt.webm"
+        width="300"
+        height="300"
+      ></video>
+
+      <video
+        id="win"
+        class="false"
+        src="./videos/win.webm"
+        width="300"
+        height="300"
+      ></video>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
